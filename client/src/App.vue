@@ -554,7 +554,7 @@
             <input type="submit" class="submit" />
           </form> -->
 
-          <b-form @submit.prevent="post" class="form">
+          <b-form @submit.prevent="post" @keyup.enter="post" class="form">
             <b-form-group id="input-group-1" label-for="input-1" class="my-4">
               <b-form-input
                 class="rounded-0"
@@ -788,6 +788,10 @@ export default {
 
   methods: {
     async post() {
+      if(!this.form.name || !this.form.email || !this.form.message)
+      {
+        return;
+      }
       await axios
         .post("http://localhost:5000/send-email", this.form)
         .then(() => {
