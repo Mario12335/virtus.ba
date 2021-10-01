@@ -3,13 +3,15 @@
     <!-- nav -->
     <div id="nav">
       <nav
+        role="navigation"
+        aria-roledescription="navigation"
         class="navbar fixed-top navbar-expand-lg navbar-dark px-3"
         style="background-color: rgba(22, 22, 22, 0.6)"
       >
         <a class="navbar-brand" href="#"
           ><img
             src="./assets/images/virtus-logo-inline-light.svg"
-            alt="Gradus logo"
+            alt="Virtus logo"
             height="25px"
         /></a>
         <button
@@ -103,33 +105,21 @@
               <div class="big shadow p-2 module">
                 <img
                   src="https://cdn.dribbble.com/users/4603514/screenshots/16531528/media/4ece856a8f4c3d112bae9648e1541cf6.jpg?compress=1&resize=2400x1800"
-                  alt="Projekt 1"
+                  alt="Polygon NFT Project - UI Design Image 1"
                 />
               </div>
-              <!-- <div class="horizontal shadow p-2 module">
-                            <img src="https://cdn.dribbble.com/users/4603514/screenshots/16531528/media/5eea31979349f8762f1fdb8407f70225.jpg?compress=1&resize=2400x1800" alt="Projekt 1">
-                        </div> -->
               <div class="p-2 shadow module">
                 <img
                   src="https://cdn.dribbble.com/users/4603514/screenshots/16531528/media/2be63d4c9893b9bf2cdfad84b8327056.jpg?compress=1&resize=2400x1800"
-                  alt="Projekt 1"
+                  alt="Polygon NFT Project - UI Design Image 2"
                 />
               </div>
               <div class="shadow p-2 module">
                 <img
                   src="https://cdn.dribbble.com/users/4603514/screenshots/16531528/media/5eea31979349f8762f1fdb8407f70225.jpg?compress=1&resize=2400x1800"
-                  alt="Projekt 1"
+                  alt="Polygon NFT Project - UI Design Image 3"
                 />
               </div>
-              <!-- <div class=" vertical shadow p-2 module">
-                            <img src="./src/assets/3dproject-1-5.jpg" alt="Projekt 1">
-                        </div>
-                        <div class=" shadow p-2 module">
-                            <img src="./src/assets/3dproject-1-6.jpg" alt="Projekt 1">
-                        </div>
-                        <div class=" shadow p-2 module">
-                            <img src="./src/assets/3dproject-1-1.jpg" alt="Projekt 1">
-                        </div> -->
             </div>
           </div>
         </div>
@@ -146,7 +136,7 @@
             <img
               class="embed-responsive embed-responsive-16by9"
               src="https://cdn.dribbble.com/users/702789/screenshots/9551899/media/5000174951650a11304a03b01ea3346a.png?compress=1&resize=1600x1200"
-              alt="Projekt 2"
+              alt="Statrak Project - UI Design Image 1"
               width="100%"
             />
           </div>
@@ -155,19 +145,19 @@
               <div class="big shadow p-2 module">
                 <img
                   src="https://cdn.dribbble.com/users/702789/screenshots/12915127/media/567d4e106373ab4dae89102f04828224.png?compress=1&resize=1600x1200"
-                  alt="Projekt 2"
+                  alt="Statrak Project - UI Design Image 1"
                 />
               </div>
               <div class="shadow p-2 module">
                 <img
                   src="https://cdn.dribbble.com/users/702789/screenshots/14473576/media/72fa200b30dcd0ab649677c04eadaba1.png?compress=1&resize=1600x1200"
-                  alt="Projekt 2"
+                  alt="Statrak Project - UI Design Image 1"
                 />
               </div>
               <div class="p-2 shadow module">
                 <img
                   src="https://cdn.dribbble.com/users/3860505/screenshots/14051687/media/e9eed2aead0cc8b74886327e400f4bc6.png?compress=1&resize=1600x1200"
-                  alt="Projekt 2"
+                  alt="Statrak Project - UI Design Image 1"
                 />
               </div>
             </div>
@@ -473,21 +463,21 @@
             <div class="col-md-2 my-3 text-center">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png"
-                alt="Technology1"
+                alt="Python machine learning data science technology 1"
                 class="brand-logo module"
               />
             </div>
             <div class="col-md-2 my-3 text-center">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png"
-                alt="Technology2"
+                alt="Angular single page apps spa ssr routing state management pwa technology 1"
                 class="brand-logo module"
               />
             </div>
             <div class="col-md-2 my-3 text-center">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
-                alt="Technology3"
+                alt="MySQL sql database queries storing data scaling 1"
                 class="brand-logo module"
               />
             </div>
@@ -702,7 +692,7 @@
               <a href="#"
                 ><img
                   src="./assets/images/virtus-logo-inline-light.svg"
-                  alt="Dusgra logo"
+                  alt="Virtus logo"
                   width="50%"
                   class="pt-2 pb-4"
               /></a>
@@ -776,6 +766,79 @@ import axios from "axios";
 export default {
   name: "App",
   components: {},
+  metaInfo: {
+    title: "Virtus.ba software solutions - landing page",
+    htmlAttrs: {
+      lang: "en",
+    },
+    meta: [
+      {
+        name: "description",
+        content: `Building powerful software solutions for your business using modern and aesthetic frontend 
+        designs with solid and stable backend. Increase your revenue or automate your workflow while increasing
+        your business traffic`,
+      },
+      {
+        name: "keywords",
+        content: `powerful software solutions business modern aesthetic frontend 
+        design solid stable backend revenue automate workflow increase grow growth
+        business traffic income database automation machine learning landing page fast easy`,
+      },
+      {
+        name: "robots",
+        content: "index, nofollow",
+      },
+      {
+        name: "googlebot",
+        content: `all`,
+      },
+      {
+        property: "og:title",
+        content:
+          "Virtus.ba software - expand your network and business with our service",
+      },
+      {
+        property: "og:description",
+        content: `Building powerful software solutions for your business using modern and aesthetic frontend 
+        designs with solid and stable backend. Increase your revenue or automate your workflow while increasing
+        your business traffic`,
+      },
+      { property: "og:site_name", content: "Virtus.ba" },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://www.virtus.ba" },
+      {
+        property: "og:image",
+        content: "./assets/images/virtus-logo-inline-light.svg",
+      },
+      {
+        property: "twitter:title",
+        content:
+          "Virtus.ba software - expand your network and business with our service",
+      },
+      {
+        property: "twitter:description",
+        content: `Building powerful software solutions for your business using modern and aesthetic frontend 
+        designs with solid and stable backend. Increase your revenue or automate your workflow while increasing
+        your business traffic`,
+      },
+      {
+        property: "twitter:image",
+        content: "./assets/images/virtus-logo-inline-light.svg",
+      },
+      {
+        property: "twitter:image:alt",
+        content: "Virtus logo",
+      },
+      {
+        property: "twitter:card",
+        content: "summary",
+      },
+      // {
+      //   name: "google-site-verification",
+      //   content: `+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34=`,
+      // },
+    ],
+  },
   data() {
     return {
       form: {
@@ -788,8 +851,7 @@ export default {
 
   methods: {
     async post() {
-      if(!this.form.name || !this.form.email || !this.form.message)
-      {
+      if (!this.form.name || !this.form.email || !this.form.message) {
         return;
       }
       await axios
